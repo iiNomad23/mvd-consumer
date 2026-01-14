@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "215843a8-a671-45ce-96f5-9984c1bd6500",
-		"name": "MVD+IATP",
+		"_postman_id": "333a4547-acc7-4680-a5d4-eeb20a84d50c",
+		"name": "MVD+IATP - FHV",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "40775346"
+		"_exporter_id": "34899303"
 	},
 	"item": [
 		{
@@ -212,6 +212,126 @@
 								"body": {
 									"mode": "raw",
 									"raw": "{\n    \"@context\": [\n        \"https://w3id.org/edc/connector/management/v0.0.1\"\n    ],\n    \"@id\": \"asset-9\",\n    \"@type\": \"Asset\",\n    \"properties\": {\n        \"description\": \"This asset requires Membership to view and negotiate.\"\n    },\n    \"dataAddress\": {\n        \"@type\": \"DataAddress\",\n        \"type\": \"HttpData\",\n        \"baseUrl\": \"http://provider-dummy-service:8000/api/v1/data\",\n        \"proxyPath\": \"true\",\n        \"proxyQueryParams\": \"true\"\n    }\n}"
+								},
+								"url": {
+									"raw": "{{HOST}}/api/management/v3/assets",
+									"host": [
+										"{{HOST}}"
+									],
+									"path": [
+										"api",
+										"management",
+										"v3",
+										"assets"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Asset 10",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"@context\": [\n        \"https://w3id.org/edc/connector/management/v0.0.1\"\n    ],\n    \"@id\": \"asset-10\",\n    \"@type\": \"Asset\",\n    \"properties\": {\n        \"description\": \"This asset requires Membership to view and an NFT agreement to use.\",\n        \"contractAddress\": \"0x7924Ef6f7335AB4483aA12426045a700066d7Bcb\",\n        \"chainId\": \"11155111\",\n        \"chainName\": \"Sepolia\"\n    },\n    \"dataAddress\": {\n        \"@type\": \"DataAddress\",\n        \"type\": \"HttpData\",\n        \"baseUrl\": \"http://provider-dapp-backend:8190/api/external/dummy-service/fetch-data\",\n        \"method\": \"POST\",\n        \"contentType\": \"application/json\",\n        \"proxyPath\": \"true\",\n        \"proxyBody\": \"true\",\n        \"proxyQueryParams\": \"true\",\n        \"proxyMethod\": \"true\"\n    }\n}"
+								},
+								"url": {
+									"raw": "{{HOST}}/api/management/v3/assets",
+									"host": [
+										"{{HOST}}"
+									],
+									"path": [
+										"api",
+										"management",
+										"v3",
+										"assets"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Asset 11",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"@context\": [\n        \"https://w3id.org/edc/connector/management/v0.0.1\"\n    ],\n    \"@id\": \"asset-11\",\n    \"@type\": \"Asset\",\n    \"properties\": {\n        \"description\": \"This asset requires Membership to view and an NFT agreement to use.\",\n        \"contractAddress\": \"0x7924Ef6f7335AB4483aA12426045a700066d7Bcb\",\n        \"chainId\": \"11155111\",\n        \"chainName\": \"Sepolia\"\n    },\n    \"dataAddress\": {\n        \"@type\": \"DataAddress\",\n        \"type\": \"HttpData\",\n        \"baseUrl\": \"http://provider-dapp-backend:8190/api/external/dummy-service/fetch-data\",\n        \"method\": \"POST\",\n        \"contentType\": \"application/json\",\n        \"proxyPath\": \"true\",\n        \"proxyBody\": \"true\",\n        \"proxyQueryParams\": \"true\",\n        \"proxyMethod\": \"true\"\n    }\n}"
+								},
+								"url": {
+									"raw": "{{HOST}}/api/management/v3/assets",
+									"host": [
+										"{{HOST}}"
+									],
+									"path": [
+										"api",
+										"management",
+										"v3",
+										"assets"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Asset 12",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"@context\": [\n        \"https://w3id.org/edc/connector/management/v0.0.1\"\n    ],\n    \"@id\": \"asset-12\",\n    \"@type\": \"Asset\",\n    \"properties\": {\n        \"description\": \"This asset requires Membership to view and an NFT agreement to use. Agreement expires after one day.\",\n        \"contractAddress\": \"0x7924Ef6f7335AB4483aA12426045a700066d7Bcb\",\n        \"chainId\": \"11155111\",\n        \"chainName\": \"Sepolia\",\n        \"agreementExpiresAfter\": \"86400\"\n    },\n    \"dataAddress\": {\n        \"@type\": \"DataAddress\",\n        \"type\": \"HttpData\",\n        \"baseUrl\": \"http://provider-dapp-backend:8190/api/external/dummy-service/fetch-data\",\n        \"method\": \"POST\",\n        \"contentType\": \"application/json\",\n        \"proxyPath\": \"true\",\n        \"proxyBody\": \"true\",\n        \"proxyQueryParams\": \"true\",\n        \"proxyMethod\": \"true\"\n    }\n}"
+								},
+								"url": {
+									"raw": "{{HOST}}/api/management/v3/assets",
+									"host": [
+										"{{HOST}}"
+									],
+									"path": [
+										"api",
+										"management",
+										"v3",
+										"assets"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Asset 13",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"@context\": [\n        \"https://w3id.org/edc/connector/management/v0.0.1\"\n    ],\n    \"@id\": \"asset-13\",\n    \"@type\": \"Asset\",\n    \"properties\": {\n        \"description\": \"This asset requires Membership to view and an NFT agreement to use. Agreement expires after one hour.\",\n        \"contractAddress\": \"0x7924Ef6f7335AB4483aA12426045a700066d7Bcb\",\n        \"chainId\": \"11155111\",\n        \"chainName\": \"Sepolia\",\n        \"agreementExpiresAfter\": \"3600\"\n    },\n    \"dataAddress\": {\n        \"@type\": \"DataAddress\",\n        \"type\": \"HttpData\",\n        \"baseUrl\": \"http://provider-dapp-backend:8190/api/external/dummy-service/fetch-data\",\n        \"method\": \"POST\",\n        \"contentType\": \"application/json\",\n        \"proxyPath\": \"true\",\n        \"proxyBody\": \"true\",\n        \"proxyQueryParams\": \"true\",\n        \"proxyMethod\": \"true\"\n    }\n}"
+								},
+								"url": {
+									"raw": "{{HOST}}/api/management/v3/assets",
+									"host": [
+										"{{HOST}}"
+									],
+									"path": [
+										"api",
+										"management",
+										"v3",
+										"assets"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Asset 14",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"@context\": [\n        \"https://w3id.org/edc/connector/management/v0.0.1\"\n    ],\n    \"@id\": \"asset-14\",\n    \"@type\": \"Asset\",\n    \"properties\": {\n        \"description\": \"This asset requires Membership to view and an NFT agreement to use. Agreement expires after one minute.\",\n        \"contractAddress\": \"0x7924Ef6f7335AB4483aA12426045a700066d7Bcb\",\n        \"chainId\": \"11155111\",\n        \"chainName\": \"Sepolia\",\n        \"agreementExpiresAfter\": \"60\"\n    },\n    \"dataAddress\": {\n        \"@type\": \"DataAddress\",\n        \"type\": \"HttpData\",\n        \"baseUrl\": \"http://provider-dapp-backend:8190/api/external/dummy-service/fetch-data\",\n        \"method\": \"POST\",\n        \"contentType\": \"application/json\",\n        \"proxyPath\": \"true\",\n        \"proxyBody\": \"true\",\n        \"proxyQueryParams\": \"true\",\n        \"proxyMethod\": \"true\"\n    }\n}"
 								},
 								"url": {
 									"raw": "{{HOST}}/api/management/v3/assets",
@@ -468,6 +588,30 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "Create NFT agreement policy",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"@context\": [\n        \"https://w3id.org/edc/connector/management/v0.0.1\"\n    ],\n    \"@type\": \"PolicyDefinition\",\n    \"@id\": \"require-nft-agreement-policy\",\n    \"policy\": {\n        \"@type\": \"Set\",\n        \"permission\": [\n            {\n                \"action\": \"use\",\n                \"constraint\": {\n                    \"leftOperand\": \"NFT.agreementToken\",\n                    \"operator\": \"eq\",\n                    \"rightOperand\": \"exists\"\n                }\n            }\n        ],\n        \"obligation\": [\n            {\n                \"action\": \"mint\",\n                \"constraint\": {\n                    \"leftOperand\": \"NFT.agreementToken\",\n                    \"operator\": \"eq\",\n                    \"rightOperand\": \"not_exists\"\n                }\n            }\n        ],\n    }\n}"
+								},
+								"url": {
+									"raw": "{{HOST}}/api/management/v3/policydefinitions",
+									"host": [
+										"{{HOST}}"
+									],
+									"path": [
+										"api",
+										"management",
+										"v3",
+										"policydefinitions"
+									]
+								}
+							},
+							"response": []
 						}
 					]
 				},
@@ -667,13 +811,133 @@
 							"response": []
 						},
 						{
-							"name": "Create \"require sensitive\" asset 2 definition",
+							"name": "Create \"require-sensitive\" asset 2 definition",
 							"request": {
 								"method": "POST",
 								"header": [],
 								"body": {
 									"mode": "raw",
 									"raw": "{\n    \"@context\": [\n        \"https://w3id.org/edc/connector/management/v0.0.1\"\n    ],\n    \"@id\": \"sensitive-only-def-asset-2\",\n    \"@type\": \"ContractDefinition\",\n    \"accessPolicyId\": \"require-membership\",\n    \"contractPolicyId\": \"require-sensitive\",\n    \"assetsSelector\": {\n        \"@type\": \"Criterion\",\n        \"operandLeft\": \"https://w3id.org/edc/v0.0.1/ns/id\",\n        \"operator\": \"=\",\n        \"operandRight\": \"asset-2\"\n    }\n}"
+								},
+								"url": {
+									"raw": "{{HOST}}/api/management/v3/contractdefinitions",
+									"host": [
+										"{{HOST}}"
+									],
+									"path": [
+										"api",
+										"management",
+										"v3",
+										"contractdefinitions"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create \"member-and-data-cred\" asset 10 definition",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"@context\": [\n        \"https://w3id.org/edc/connector/management/v0.0.1\"\n    ],\n    \"@id\": \"member-and-dataprocessor-def-asset-10\",\n    \"@type\": \"ContractDefinition\",\n    \"accessPolicyId\": \"require-membership\",\n    \"contractPolicyId\": \"require-dataprocessor\",\n    \"assetsSelector\": {\n        \"@type\": \"Criterion\",\n        \"operandLeft\": \"https://w3id.org/edc/v0.0.1/ns/id\",\n        \"operator\": \"=\",\n        \"operandRight\": \"asset-10\"\n    }\n}"
+								},
+								"url": {
+									"raw": "{{HOST}}/api/management/v3/contractdefinitions",
+									"host": [
+										"{{HOST}}"
+									],
+									"path": [
+										"api",
+										"management",
+										"v3",
+										"contractdefinitions"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create \"member-and-data-cred\" asset 11 definition",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"@context\": [\n        \"https://w3id.org/edc/connector/management/v0.0.1\"\n    ],\n    \"@id\": \"member-and-dataprocessor-def-asset-11\",\n    \"@type\": \"ContractDefinition\",\n    \"accessPolicyId\": \"require-membership\",\n    \"contractPolicyId\": \"require-dataprocessor\",\n    \"assetsSelector\": {\n        \"@type\": \"Criterion\",\n        \"operandLeft\": \"https://w3id.org/edc/v0.0.1/ns/id\",\n        \"operator\": \"=\",\n        \"operandRight\": \"asset-11\"\n    }\n}"
+								},
+								"url": {
+									"raw": "{{HOST}}/api/management/v3/contractdefinitions",
+									"host": [
+										"{{HOST}}"
+									],
+									"path": [
+										"api",
+										"management",
+										"v3",
+										"contractdefinitions"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create \"member-and-data-cred\" asset 12 definition",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"@context\": [\n        \"https://w3id.org/edc/connector/management/v0.0.1\"\n    ],\n    \"@id\": \"member-and-dataprocessor-def-asset-12\",\n    \"@type\": \"ContractDefinition\",\n    \"accessPolicyId\": \"require-membership\",\n    \"contractPolicyId\": \"require-dataprocessor\",\n    \"assetsSelector\": {\n        \"@type\": \"Criterion\",\n        \"operandLeft\": \"https://w3id.org/edc/v0.0.1/ns/id\",\n        \"operator\": \"=\",\n        \"operandRight\": \"asset-12\"\n    }\n}"
+								},
+								"url": {
+									"raw": "{{HOST}}/api/management/v3/contractdefinitions",
+									"host": [
+										"{{HOST}}"
+									],
+									"path": [
+										"api",
+										"management",
+										"v3",
+										"contractdefinitions"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create \"member-and-data-cred\" asset 13 definition",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"@context\": [\n        \"https://w3id.org/edc/connector/management/v0.0.1\"\n    ],\n    \"@id\": \"member-and-dataprocessor-def-asset-13\",\n    \"@type\": \"ContractDefinition\",\n    \"accessPolicyId\": \"require-membership\",\n    \"contractPolicyId\": \"require-dataprocessor\",\n    \"assetsSelector\": {\n        \"@type\": \"Criterion\",\n        \"operandLeft\": \"https://w3id.org/edc/v0.0.1/ns/id\",\n        \"operator\": \"=\",\n        \"operandRight\": \"asset-13\"\n    }\n}"
+								},
+								"url": {
+									"raw": "{{HOST}}/api/management/v3/contractdefinitions",
+									"host": [
+										"{{HOST}}"
+									],
+									"path": [
+										"api",
+										"management",
+										"v3",
+										"contractdefinitions"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create \"member-and-data-cred\" asset 14 definition",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"@context\": [\n        \"https://w3id.org/edc/connector/management/v0.0.1\"\n    ],\n    \"@id\": \"member-and-dataprocessor-def-asset-14\",\n    \"@type\": \"ContractDefinition\",\n    \"accessPolicyId\": \"require-membership\",\n    \"contractPolicyId\": \"require-dataprocessor\",\n    \"assetsSelector\": {\n        \"@type\": \"Criterion\",\n        \"operandLeft\": \"https://w3id.org/edc/v0.0.1/ns/id\",\n        \"operator\": \"=\",\n        \"operandRight\": \"asset-14\"\n    }\n}"
 								},
 								"url": {
 									"raw": "{{HOST}}/api/management/v3/contractdefinitions",
@@ -957,7 +1221,8 @@
 											"}"
 										],
 										"type": "text/javascript",
-										"packages": {}
+										"packages": {},
+										"requests": {}
 									}
 								},
 								{
@@ -974,7 +1239,8 @@
 											"})"
 										],
 										"type": "text/javascript",
-										"packages": {}
+										"packages": {},
+										"requests": {}
 									}
 								}
 							],
@@ -1837,7 +2103,8 @@
 									"});"
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
