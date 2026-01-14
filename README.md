@@ -14,7 +14,11 @@ The other two repositories also have a template branch that can be used as a sta
 The following image shows the final setup that was achieved through the deployment of this repository and the other two repositories.
 It acts as an overview of how the deployment can look like.
 
-![Overview of the Deployment](deployment-server-setup.png "Overview of the Deployment")
+![Overview of the deployment](deployment-server-setup.png "Overview of the deployment")
+
+The server setup, including the DApp, was achieved as follows:  
+
+![Overview of the deployment including the DApp](deployment-server-setup-dapp.png "Overview of the deployment including the DApp")
 
 ### Prerequisites for a deployment
 In the following the Server that hosts the deployed dataspace components is referred to as Application Server.
