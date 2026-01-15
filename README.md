@@ -16,7 +16,7 @@ It acts as an overview of how the deployment can look like.
 
 ![Overview of the deployment](deployment-server-setup.png "Overview of the deployment")
 
-The server setup, including the DApp, was achieved as follows:  
+The server setup, including the [DApp](https://github.com/iiNomad23/edc-asset-agreement-dapp), was achieved as follows:  
 
 ![Overview of the deployment including the DApp](deployment-server-setup-dapp.png "Overview of the deployment including the DApp")
 
